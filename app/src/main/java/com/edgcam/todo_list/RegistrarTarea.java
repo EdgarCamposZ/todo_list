@@ -49,7 +49,6 @@ public class RegistrarTarea extends AppCompatActivity {
         descripcion = findViewById(R.id.txtDescripcion);
         fecha = findViewById(R.id.txtFecha);
         hora = findViewById(R.id.txtHora);
-        estatus = findViewById(R.id.txtEstatus);
 
         botonAgregar = findViewById(R.id.btnGuardarTarea);
         botonRegresar = findViewById(R.id.btnRegresar);
@@ -141,7 +140,7 @@ public class RegistrarTarea extends AppCompatActivity {
                         JSONObject objJSONResultado = new JSONObject(response.toString());
                         String estado = objJSONResultado.getString("estado");
                         if (estado.equals("1")) {
-                            Toast.makeText(RegistrarTarea.this, "Contacto registrado con exito", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegistrarTarea.this, "Tarea agregada con exito", Toast.LENGTH_SHORT).show();
                         } else {
                             Toast.makeText(RegistrarTarea.this, "Error: " + estado, Toast.LENGTH_SHORT).show();
                         }
@@ -163,7 +162,6 @@ public class RegistrarTarea extends AppCompatActivity {
                     params.put("descripcion", descripcion.getText().toString());
                     params.put("fecha", new SimpleDateFormat("yyyy-MM-dd").format(fechaSeleccionada.getTime()));
                     params.put("hora", new SimpleDateFormat("HH:mm:ss").format(horaSeleccionada.getTime()));
-                    params.put("estatus", estatus.getText().toString());
                     return params;
                 }
             };

@@ -12,7 +12,7 @@
         android:layout_height="133dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/icono_agenda" />
+        app:srcCompat="@drawable/icono_tareas" />
 
     <Button
         android:id="@+id/btnPendientes"

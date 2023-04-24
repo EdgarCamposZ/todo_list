@@ -7,11 +7,11 @@
     tools:context=".RegistrarTarea">
 
 
-<TextView
+    <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Modificación de  Tarea"
+        android:text="Nueva  Tarea"
         android:textSize="24sp" />
 
     <TextView
@@ -57,14 +57,6 @@
         android:layout_toEndOf="@+id/txtFecha"
         android:text="Hora de la tarea" />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txtFecha"
-        android:layout_marginTop="16dp"
-        android:text="Estatus" />
-
     <EditText
         android:id="@+id/txtDescripcion"
         android:layout_width="match_parent"
@@ -75,22 +67,12 @@
         android:hint="Descripcion"
         android:inputType="text" />
 
-    <EditText
-        android:id="@+id/txtEstatus"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView7"
-        android:layout_marginTop="-12dp"
-        android:ems="10"
-        android:hint="Estatus"
-        android:inputType="number" />
-
     <Button
         android:id="@+id/btnGuardarTarea"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtEstatus"
-        android:layout_marginTop="51dp"
+        android:layout_below="@+id/txtFecha"
+        android:layout_marginTop="24dp"
         android:text="Guardar Tarea" />
 
     <Button
@@ -98,6 +80,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/btnGuardarTarea"
+        android:layout_marginTop="11dp"
         android:text="Regresar" />
 
     <Button
